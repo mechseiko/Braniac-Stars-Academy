@@ -1,0 +1,42 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.header{
+  text-align: center;
+}
+.headerh1{
+  font-size: 4em;
+  color: black;
+  margin-bottom: 20px;
+}
+.hero{
+  padding: 20px;
+}
+.heroleft * {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.herospan{
+  color:purple;
+}
+.heroimg {
+  filter: drop-shadow(0 0 1em #646cffaa);
+  width: 50%;
+}
+.herobutton{
+  padding: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  background-color: aqua;
+  cursor: pointer;
+}
+.herobutton:hover{
+  background-color:aquamarine;
+  animation: herobutton .5s ease-in 0s 1;
+}
+@keyframes herobutton {
+  from{border-left: 15px solid rebeccapurple;}
+}
