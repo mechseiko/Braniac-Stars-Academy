@@ -4,6 +4,7 @@ import Hero from './Hero';
 import Location from '../Location';
 import Footer from '../Footer';
 import Loader from '../Loader';
+import Cursor from '../Cursor'
 
 function Lander(props) {
     const [loading, setLoading] = useState(true);
@@ -16,12 +17,13 @@ function Lander(props) {
             {
                 loading ? <Loader/> : 
                 <>
-                    <Header/>
-                    <main>
+                    <Cursor/>
+                    <div>
+                        <Header/>
                         <Hero/>
-                    </main>
-                    <Location/>
-                    <Footer/>
+                        <Location/>
+                        <Footer/>
+                    </div>
                 </>
             }
         </div>
