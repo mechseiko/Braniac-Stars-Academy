@@ -5,10 +5,12 @@ import heroimg from '../../assets/heroimg.jpg'
 const Hero = () => {
     const [text, setText] = useState("Success")
     const spans = ["Excellence", "Breakthrough", "Comeback", "Success"]
-    let key = -1;
+    let key = 0;
     useEffect(() => {
         const timer = setInterval(() => {
-            key < spans.length - 1 ? (key += 1,setText(spans[key])):setText("Success")
+            key += 1
+            key = Number(key.toFixed())
+            key <= spans.length - 1 ? setText(spans[key - 1]):(key = key/2,setText(spans[key/2]))
         }, 2000)
         return () => clearInterval(timer);
     }, [])

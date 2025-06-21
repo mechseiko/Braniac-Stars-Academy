@@ -3,7 +3,7 @@ import React from 'react';
 const Location = () => {
     return (
         <div>
-            <iframe src="" frameborder="0"></iframe>
+            {/* <iframe src="" frameborder="0"></iframe> */}
         </div>
     );
 }

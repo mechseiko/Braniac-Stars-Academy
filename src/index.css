@@ -6,6 +6,9 @@ body{
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
+main{
+  padding: 1px 50px;
+}
 .flex{
   display: -webkit-flex;
   display: flex;

@@ -17,7 +17,9 @@ function Lander(props) {
                 loading ? <Loader/> : 
                 <>
                     <Header/>
-                    <Hero/>
+                    <main>
+                        <Hero/>
+                    </main>
                     <Location/>
                     <Footer/>
                 </>
