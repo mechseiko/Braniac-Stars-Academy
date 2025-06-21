@@ -3,14 +3,19 @@
   margin: 0px;
   box-sizing: border-box;
 }
+
+/* HEADER */
 .header{
   text-align: center;
+  cursor:grab;
 }
 .headerh1{
   font-size: 4em;
   color: black;
   margin-bottom: 20px;
 }
+
+/* HERO */
 .hero{
   padding: 20px;
 }
@@ -40,3 +45,4 @@
 @keyframes herobutton {
   from{border-left: 15px solid rebeccapurple;}
 }
+

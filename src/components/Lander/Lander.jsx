@@ -10,7 +10,7 @@ function Lander(props) {
     const loader = setInterval(() => {
         setLoading(false);
         clearInterval(loader);
-    }, 2000);
+    }, 200);
     return (
         <div>
             {
