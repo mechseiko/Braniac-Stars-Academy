@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Lander from './components/Lander/Lander'
-import Lost from './Lost';
+import Lost from './components/Lost';
 import './App.css'
 
 function App() {
