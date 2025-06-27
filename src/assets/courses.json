@@ -1,7 +1,50 @@
 [
     {
-        "course": "",
-        "level": "",
-        "semester": ""
+        "course": "PUL 304",
+        "level": "300 level",
+        "semester": "2",
+        "diff": "medium"
+    },
+    {
+        "course": "SSC 201",
+        "level": "200 level",
+        "semester": "1",
+        "diff": "easy" 
+    },
+    {
+        "course": "SOC 201",
+        "level": "200 level",
+        "semester": "1",
+        "diff": "easy" 
+    },
+    {
+        "course": "POL 204",
+        "level": "200 level",
+        "semester": "2",
+        "diff": "medium"
+    },
+    {
+        "course": "SSC 105",
+        "level": "100 level",
+        "semester": "1",
+        "diff": "easy"
+    },
+    {
+        "course": "SOL 304",
+        "level": "300 level",
+        "semester": "2",
+        "diff": "hard"
+    },
+    {
+        "course": "PSY 105",
+        "level": "100 level",
+        "semester": "1",
+        "diff": "hard"
+    },
+    {
+        "course": "SSC 106",
+        "level": "100 level",
+        "semester": "1",
+        "diff": "easy"
     }
 ]

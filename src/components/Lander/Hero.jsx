@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 import heroimg from '../../assets/heroimg.jpg'
 
 const Hero = () => {
-    const [text, setText] = useState("Success")
-    const spans = ["Excellence", "Breakthrough", "Comeback", "Success"]
+    const [text, setText] = useState("  Success")
+    const spans = ["Excellence", "Breakthrough", "Acheivements", "Greatness", "Eminence", ""]
     let key = 0;
     useEffect(() => {
         const timer = setInterval(() => {
             key += 1
             key = Number(key.toFixed())
-            key <= spans.length - 1 ? setText(spans[key - 1]):(key = key/2,setText(spans[key/2]))
+            key <= spans.length - 1 ? setText(spans[key - 1]):(key = key/4,setText(spans[key]))
         }, 2000)
         return () => clearInterval(timer);
     }, [])
@@ -28,7 +28,7 @@ const Hero = () => {
                         transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
                         className='herospan'
                     >
-                        {text}
+                        {text?text:"  Success"}
                     </motion.span>{" "}
                 with Braniac Stars Academy</h1>
                 <p
@@ -37,7 +37,7 @@ const Hero = () => {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     className='herobutton'
-                >GET IN TOUCH &gt;&gt;</motion.button>
+                >GET IN TOUCH</motion.button>
             </div>
             <img src={heroimg} className='heroimg' alt="hero" />
         </motion.div>

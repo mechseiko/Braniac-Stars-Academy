@@ -6,9 +6,28 @@ body{
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   cursor: none;
+  margin: 0px auto;
+  padding: 0px 30px;
 }
-main{
-  padding: 1px 50px;
+.parentCursor{
+  display: flex;
+  margin: 40vh auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.cursor{
+  margin: 20px;
+  animation: cursor 1s ease 0s infinite;
+  border: 5px solid cyan;
+}
+.cursors{
+  transform: rotate(360deg);
+  animation: cursor .5s linear 0s infinite;
+}
+@keyframes cursor {
+  from {transform: rotate(180deg);}
+  to {transform: rotate(360deg);}
 }
 .flex{
   display: -webkit-flex;
@@ -18,4 +37,7 @@ main{
 h1 {
   font-size: 3.5em;
   line-height: 1.2;
+}
+button, Link{
+  cursor: none;
 }

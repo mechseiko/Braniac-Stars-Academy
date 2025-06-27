@@ -33,17 +33,17 @@ export default function CustomCursor() {
   }, []);
 
   return (
-    <div
+    <div className="cursors"
       style={{
         position: "fixed",
-        top: position.y,
-        left: position.x,
+        top: (position.y),
+        left: (position.x),
         transform: "translate(-50%, -50%)",
         width: "20px",
         height: "20px",
-        borderRadius: "50%",
+        borderRadius: "40%",
         border: "2px solid cyan",
-        backgroundColor: hovering ? "purple" : "black",
+        backgroundColor: hovering ? "black" : "purple",
         pointerEvents: "none",
         transition: "background-color 0.2s ease",
         zIndex: 9999,

@@ -7,12 +7,8 @@
 /* HEADER */
 .header{
   text-align: center;
-  cursor:grab;
-}
-.headerh1{
-  font-size: 4em;
-  color: black;
-  margin-bottom: 20px;
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
 
 /* HERO */
@@ -36,13 +32,33 @@
   border-radius: 10px;
   border: none;
   background-color: aqua;
-  cursor: pointer;
 }
 .herobutton:hover{
   background-color:aquamarine;
   animation: herobutton .5s ease-in 0s 1;
 }
 @keyframes herobutton {
-  from{border-left: 15px solid rebeccapurple;}
+  from{border-left: 20px solid rebeccapurple;}
 }
 
+article {
+    max-width: 800px;
+    padding: 30px;
+    width: 80%;
+    margin: 30px auto;
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    background-color: #fff8e1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+.filter {
+    margin: 20px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #6a32da;
+    border: none;
+    cursor: pointer;
+}
