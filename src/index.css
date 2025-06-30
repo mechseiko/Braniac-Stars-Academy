@@ -1,3 +1,26 @@
+
+  /* // useEffect(() => {
+  //   const enter = () => setHovering(true);
+  //   const leave = () => setHovering(false);
+
+  //   const hoverTargets = document.querySelectorAll(".bg-hover");
+  //   hoverTargets.forEach((hoverTarget) => {
+  //     hoverTarget.addEventListener("mouseenter", enter);
+  //     hoverTarget.addEventListener("mouseleave", leave);
+  //   });
+  //   return () => {
+  //     hoverTargets.forEach((hoverTarget) => {
+  //       hoverTarget.removeEventListener("mouseenter", enter);
+  //       hoverTarget.removeEventListener("mouseleave", leave);
+  //     });
+  //   };
+  // }, []); */
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  cursor: none;
+}
 body{
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-synthesis: none;
@@ -5,7 +28,6 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  cursor: none;
   margin: 0px auto;
   padding: 0px 30px;
 }
@@ -23,7 +45,7 @@ body{
 }
 .cursors{
   transform: rotate(360deg);
-  animation: cursor .5s linear 0s infinite;
+  animation: cursor 1s linear 0s infinite;
 }
 @keyframes cursor {
   from {transform: rotate(180deg);}
@@ -34,10 +56,15 @@ body{
   display: flex;
   justify-content: space-between;
 }
-h1 {
-  font-size: 3.5em;
-  line-height: 1.2;
-}
-button, Link{
-  cursor: none;
+
+@media screen and (max-width: 750px) {
+  *{
+    cursor: auto;
+  }
+  .cursors{
+    display: none;
+  }
+  .hero{
+    flex-direction: column;
+  }
 }

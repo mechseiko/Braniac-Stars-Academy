@@ -11,7 +11,7 @@ function Lander(props) {
     const loader = setInterval(() => {
         setLoading(false);
         clearInterval(loader);
-    }, 3000);
+    }, 2000);
     return (
         <div>
             {
@@ -19,7 +19,6 @@ function Lander(props) {
                 <main>
                     <Header/>
                     <Hero/>
-                    <Link to={"/courses"}>Proceed to courses</Link>
                     <Location/>
                     <Footer/>
                 </main>

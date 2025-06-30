@@ -4,10 +4,10 @@ const Loader = () => {
     const [text, setText] = useState("Fetching data...")
     const textChange = setTimeout(() => {
         setText("Almost There...")
-    }, 1500)
+    }, 1000)
     const loadStyle = {
-        width: "40px",
-        height: "40px",
+        width: "25px",
+        height: "25px",
         borderRadius: "40%",
         backgroundColor: "purple",
     }

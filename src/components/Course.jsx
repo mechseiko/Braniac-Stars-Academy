@@ -8,6 +8,7 @@ const Course = ({course, level, semester, diff}) => {
                 <button className='filter'>{level}</button>
                 <button className='filter'>{semester}</button>
                 <button className='filter'>{diff}</button>
+                <button className='filter'>{diff}</button>
             </article>
         </div>
     )

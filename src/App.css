@@ -1,23 +1,48 @@
-*{
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-}
+
 
 /* HEADER */
 .header{
-  text-align: center;
-  justify-content: space-around;
-  margin-bottom: 30px;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+  margin-top: 10px;
 }
+nav ul{
+  list-style-type: none;
+}
+.mobile, .ham{
+  display: none;
+}
+nav ul * {
+  margin: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: large;
+}
+.music{
+  display: none;
+}
+.musicButton{
+  outline: none;
+  border: none;
+  background: none;
+  color: purple;
+}
+
 
 /* HERO */
 .heroleft{
   width: 45%;
 }
 .heroleft * {
-  margin-top: 20px;
+  padding-top: 20px;
   margin-bottom: 15px;
+}
+.heroh1{
+  font-size: 3em;
+  text-shadow: 1px 2px 1px #6a32da;
+}
+.heroh1 ~ p{
+  margin-bottom: 30px;
 }
 .herospan{
   color:purple;
@@ -31,6 +56,7 @@
   font-weight: 600;
   border-radius: 10px;
   border: none;
+  outline: none;
   background-color: aqua;
 }
 .herobutton:hover{
@@ -41,6 +67,7 @@
   from{border-left: 20px solid rebeccapurple;}
 }
 
+
 article {
     max-width: 800px;
     padding: 30px;
@@ -49,11 +76,8 @@ article {
     border: 2px solid #f0f0f0;
     border-radius: 10px;
     background-color: #fff8e1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-family: "Inter", sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 .filter {
     margin: 20px;
     padding: 10px 15px;
@@ -61,4 +85,18 @@ article {
     background-color: #6a32da;
     border: none;
     cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 750px) {
+  .desktop{
+    display: none;
+  }
+  .ham, .mobile{
+    display: block;
+  }
+  .heroleft, .heroimg{
+    width: 100%;
+  }
 }
