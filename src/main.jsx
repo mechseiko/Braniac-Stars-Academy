@@ -6,7 +6,7 @@ import Cursor from '../src/components/Cursor.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
     <Cursor />
+    <App />
   </StrictMode>,
 )
