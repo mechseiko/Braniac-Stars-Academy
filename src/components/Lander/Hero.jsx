@@ -32,7 +32,7 @@ const Hero = () => {
                     >
                         {text?text:"  Success"}
                     </motion.span>{" "}
-                with Braniac Stars Academy</h1>
+                with Brainiac Stars Academy</h1>
                 <p style={{fontSize:"20px", marginBottom:"35px",}}
                 >Explore step-by-step guides and resources to master subjects like Math and boost your grades today!</p>
                 <HeroButton />
