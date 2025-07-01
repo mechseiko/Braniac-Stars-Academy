@@ -2,9 +2,10 @@ import React from 'react';
 
 const Location = () => {
     return (
-        <div>
+        <section>
+            Location
             {/* <iframe src="" frameborder="0"></iframe> */}
-        </div>
+        </section>
     );
 }
 

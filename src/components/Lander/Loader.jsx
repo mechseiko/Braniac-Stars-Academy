@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import {motion} from 'framer-motion'
 
 const Loader = () => {
     const [text, setText] = useState("Fetching data...")
     const textChange = setTimeout(() => {
         setText("Almost There...")
-    }, 1000)
+    }, 1) //1000
     const loadStyle = {
         width: "25px",
         height: "25px",

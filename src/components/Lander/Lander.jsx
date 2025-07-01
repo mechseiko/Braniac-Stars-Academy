@@ -3,27 +3,34 @@ import Header from '../Header';
 import Hero from './Hero';
 import Location from '../Location';
 import Footer from '../Footer';
-import Loader from '../Loader';
+import Loader from './Loader';
 import { Link } from 'react-router-dom';
+
 
 function Lander(props) {
     const [loading, setLoading] = useState(true);
     const loader = setInterval(() => {
         setLoading(false);
         clearInterval(loader);
-    }, 2000);
+    }, 1); //2000
     return (
-        <div>
+        <body>
             {
-                loading ? <Loader/> : 
-                <main>
-                    <Header/>
-                    <Hero/>
-                    <Location/>
+                loading ? <Loader/> :
+                <>
+                    <Header/> 
+                    <main>
+                        <Hero/>
+                        <Hero/>
+                        <Hero/>
+                        <Hero/>
+                        <Location/>
+                    </main>
                     <Footer/>
-                </main>
+                </>
+                
             }
-        </div>
+        </body>
     );
 }
 

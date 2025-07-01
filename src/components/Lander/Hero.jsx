@@ -21,12 +21,13 @@ const Hero = () => {
             transition={{duration:1.0, ease:'easeInOut'}}
             >
             <div className='heroleft'> 
-                <h1 className='heroh1'>Unlock Academic {" "}
+                <h1 style={{fontSize:"3em", textShadow:"1px 2px 1px #6a32da",}}>Unlock Academic {" "}
                     <motion.span
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
                         className='herospan'
+                        style={{color: "purple"}}
                     >
                         {text?text:"  Success"}
                     </motion.span>{" "}

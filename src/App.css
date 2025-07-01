@@ -1,55 +1,33 @@
 
-
 /* HEADER */
 .header{
-  justify-content: space-evenly;
-  margin-bottom: 25px;
   margin-top: 10px;
-}
-nav ul{
-  list-style-type: none;
+  padding: 20px;
+  background-color: blanchedalmond;
 }
 .mobile, .ham{
   display: none;
 }
-nav ul * {
-  margin: 5px;
-  text-decoration: none;
+nav ul li, nav ul li * {
+  margin: 10px;
   font-weight: 600;
-  font-size: large;
-}
-.music{
-  display: none;
-}
-.musicButton{
-  outline: none;
-  border: none;
-  background: none;
-  color: purple;
+  font-size: medium;
+  text-decoration: none;
 }
 
 
 /* HERO */
 .heroleft{
-  width: 45%;
+  width: 50%;
 }
 .heroleft * {
   padding-top: 20px;
-  margin-bottom: 15px;
-}
-.heroh1{
-  font-size: 3em;
-  text-shadow: 1px 2px 1px #6a32da;
-}
-.heroh1 ~ p{
-  margin-bottom: 30px;
-}
-.herospan{
-  color:purple;
+  margin-bottom: 20px;
 }
 .heroimg {
   filter: drop-shadow(0 0 1em #646cffaa);
   width: 55%;
+  border-radius: 10px;
 }
 .herobutton{
   padding: 20px;
@@ -69,22 +47,22 @@ nav ul * {
 
 
 article {
-    max-width: 800px;
-    padding: 30px;
-    width: 80%;
-    margin: 30px auto;
-    border: 2px solid #f0f0f0;
-    border-radius: 10px;
-    background-color: #fff8e1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  padding: 30px;
+  width: 80%;
+  margin: 30px auto;
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+  background-color: #fff8e1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .filter {
-    margin: 20px;
-    padding: 10px 15px;
-    color: #fff;
-    background-color: #6a32da;
-    border: none;
-    cursor: pointer;
+  margin: 20px;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #6a32da;
+  border: none;
+  cursor: pointer;
 }
 
 
@@ -98,5 +76,8 @@ article {
   }
   .heroleft, .heroimg{
     width: 100%;
+  }
+  nav ul li{
+    margin-bottom: 35px;
   }
 }
