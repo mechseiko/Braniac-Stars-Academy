@@ -14,6 +14,10 @@ nav ul li, nav ul li * {
   font-size: medium;
   text-decoration: none;
 }
+nav ul li * :hover{
+  text-shadow: 1px 1px 1px black;
+  text-transform: uppercase;
+}
 
 
 /* HERO */
@@ -78,6 +82,6 @@ article {
     width: 100%;
   }
   nav ul li{
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
 }

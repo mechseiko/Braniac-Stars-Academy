@@ -1,6 +1,7 @@
 import React, { useState, useEffect }  from 'react';
 import { motion } from 'framer-motion';
 import heroimg from '../../assets/heroimg.jpg'
+import HeroButton from '../HeroButton';
 
 const Hero = () => {
     const [text, setText] = useState("  Success")
@@ -15,10 +16,10 @@ const Hero = () => {
         return () => clearInterval(timer);
     }, [])
     return (
-        <motion.div className='flex hero'
-            initial={{opacity:0, y:40}}
-            animate={{opacity:1, y:0}}
-            transition={{duration:1.0, ease:'easeInOut'}}
+        <motion.section className='flex hero'
+            initial={{ opacity:0, y:40 }}
+            animate={{ opacity:1, y:0 }}
+            transition={{ duration:1.0, ease:'easeInOut' }}
             >
             <div className='heroleft'> 
                 <h1 style={{fontSize:"3em", textShadow:"1px 2px 1px #6a32da",}}>Unlock Academic {" "}
@@ -32,16 +33,12 @@ const Hero = () => {
                         {text?text:"  Success"}
                     </motion.span>{" "}
                 with Braniac Stars Academy</h1>
-                <p style={{fontSize:"20px"}}
+                <p style={{fontSize:"20px", marginBottom:"35px",}}
                 >Explore step-by-step guides and resources to master subjects like Math and boost your grades today!</p>
-                <motion.button 
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    className='herobutton'
-                >GET IN TOUCH</motion.button>
+                <HeroButton />
             </div>
             <img src={heroimg} className='heroimg' alt="hero" />
-        </motion.div>
+        </motion.section>
     );
 }
 

@@ -10,8 +10,8 @@ body{
   margin: 0px auto;
 }
 main{
-  padding: 100px 25px;
-  margin-top: 50px
+  padding: 50px 20px;
+  margin-top: 70px;
 }
 section{
   margin-bottom: 30px;
@@ -28,13 +28,20 @@ section{
   animation: cursor 1s ease 0s infinite;
   border: 5px solid cyan;
 }
-.cursors{
+.customCursor{
   transform: rotate(360deg);
-  animation: cursor 1s linear 0s infinite;
+  animation: cursor .8s linear 0s infinite;
+  width: 25px;
+  height: 25px;
+  border-radius: 40%;
+  background-color: purple;
+  pointer-events: none;
+  z-index: 9999;
+  position: fixed;
 }
 @keyframes cursor {
-  from {transform: rotate(180deg);background-color: purple;}
-  to {transform: rotate(360deg);background-color: indigo;}
+  from {transform: rotate(180deg);}
+  to {transform: rotate(360deg);}
 }
 .flex{
   display: -webkit-flex;
@@ -48,9 +55,13 @@ section{
     cursor: auto;
   }
   main{
-    
+    padding: 40px 10px;
+    margin-top: 30px;
   }
   .cursors{
+    display: none;
+  }
+  .customCursor{
     display: none;
   }
   .hero{

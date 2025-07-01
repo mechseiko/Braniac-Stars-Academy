@@ -14,23 +14,19 @@ function Lander(props) {
         clearInterval(loader);
     }, 1); //2000
     return (
-        <body>
+        <>
             {
                 loading ? <Loader/> :
                 <>
                     <Header/> 
                     <main>
                         <Hero/>
-                        <Hero/>
-                        <Hero/>
-                        <Hero/>
-                        <Location/>
                     </main>
+                    
                     <Footer/>
                 </>
-                
             }
-        </body>
+        </>
     );
 }
 

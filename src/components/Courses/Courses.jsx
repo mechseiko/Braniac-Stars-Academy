@@ -9,15 +9,15 @@ const Courses = () => {
     return(
         <>
             <Header />
-            <motion.section
-                
+            <motion.main
+    	        
             >
             {
                 courseData.map((course, index) => {
-                    return <Course course = {course.course} level={course.level} semester={course.semester}/>
+                    return <Course key={index} course = {course.course} level={course.level} semester={course.semester}/>
                 })
             }
-            </motion.section>
+            </motion.main>
             <Footer />
         </>
     )

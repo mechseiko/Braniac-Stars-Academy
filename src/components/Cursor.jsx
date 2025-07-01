@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function CustomCursor() { 
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [hovering, setHovering] = useState(false);
+  const [position, setPosition] = useState({ y: window.innerHeight/2, x: window.innerWidth/2 - 200 });
 
   useEffect(() => {
     const move = (mouse) => {
@@ -14,19 +13,11 @@ export default function CustomCursor() {
   
   return (
     <div 
-      className="cursors"
-      style={{
-        position: "fixed",
-        top: (position.y),
-        left: (position.x),
-        width: "25px",
-        height: "25px",
-        borderRadius: "40%",
-        backgroundColor: hovering ? "black" : "purple",
-        pointerEvents: "none",
-        zIndex: 9999,
-      }}
-    >
-    </div>
+        className="customCursor"
+        style={{
+            top: (position.y),
+            left: (position.x),
+        }}
+    ></div>
   );
 }

@@ -6,11 +6,12 @@ import Footer from '../Footer';
 const Lost = () => {
     return (
         <>
-        
+            <Header />
+            <motion.main>
+                404 Page
+            </motion.main>
+            <Footer />
         </>
-        <motion.main>
-            404 Page
-        </motion.main>
     );
 }
 

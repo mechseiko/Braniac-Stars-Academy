@@ -2,31 +2,26 @@
     {
         "course": "PUL 304",
         "level": "300 level",
-        "semester": "2",
-        "diff": "medium"
+        "semester": "2"
     },
     {
         "course": "SSC 201",
         "level": "200 level",
-        "semester": "1",
-        "diff": "easy" 
+        "semester": "1"
     },
     {
         "course": "SOC 201",
         "level": "200 level",
-        "semester": "1",
-        "diff": "easy" 
+        "semester": "1"
     },
     {
         "course": "POL 204",
         "level": "200 level",
-        "semester": "2",
-        "diff": "medium"
+        "semester": "2"
     },
     {
         "course": "SSC 105",
         "level": "100 level",
-        "semester": "1",
-        "diff": "easy"
+        "semester": "1"
     }
 ]
