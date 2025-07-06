@@ -7,7 +7,7 @@ const HeroButton = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             className='herobutton'
-        >GET STARTED</motion.button>
+        >GET INVOLVED</motion.button>
     );
 }
 
