@@ -3,8 +3,8 @@ import {motion} from 'framer-motion'
 import { Link } from 'react-router-dom';
 import ham from '../assets/ham.svg'
 import music from '../assets/music.mp3'
-import logo from '../assets/mech.jpg'
-import toggleMusicBtn from '../assets/toggleMusic.svg'
+import logo from '../assets/logo.png'
+import toggleMusicBtn from '../assets/toggleMusic.png'
 import HeroButton from './HeroButton';
 import Footer from './Footer';
 
@@ -20,7 +20,6 @@ const Header = () => {
     }
     const toggleMusic = () => {
         isPlaying ? setIsPlaying(false) : setIsPlaying(true)
-        isPlaying ? alert("Music off") : alert("Music on")
     }
 
     return(
@@ -29,7 +28,7 @@ const Header = () => {
                 className='header flex'
             >
                 {/* LOGO/TITLE */}
-                <h1 style={{fontSize:"22px"}} title ="Braniac Stars Academy">Braniac Stars Academy</h1>
+                <img title ="Braniac Stars Academy" src={logo} alt="logo" style={{width:"60px", borderRadius:"5px",}} />
 
                 {/* DESKTOP NAV */}
                 <nav className='desktop'>
@@ -46,7 +45,7 @@ const Header = () => {
                 <div className='flex'>
                     <img src={ham} alt="ham" className='ham' onClick={openNav}/>
                     {/* MUSIC */}
-                    <img onClick={toggleMusic} src={toggleMusicBtn} style={{width: "25px"}} alt="toggleMusicBtn" />
+                    <img onClick={toggleMusic} src={toggleMusicBtn} style={{width: "50px"}} alt="toggleMusicBtn" />
                 </div>
                 
                 {
